@@ -1,0 +1,15 @@
+---
+# Additional tasks to apply to my nas, which (ATM) should not be committed upstream
+- hosts: all
+
+  pre_tasks:
+
+  tasks:
+    - import_tasks: custom-tasks/dvb-hauppauge.yml
+      tags: dvb-hauppauge
+
+    - import_tasks: custom-tasks/avahi.yml
+      tags: avahi
+
+    - import_tasks: custom-tasks/traefik.yml
+      tags: traefik
