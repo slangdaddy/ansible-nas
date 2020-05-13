@@ -26,3 +26,6 @@ heimdall_enabled: true
 
 # Airsonic
 airsonic_enabled: true
+
+# Glances
+glances_enabled: true
