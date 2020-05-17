@@ -21,6 +21,11 @@
         - docker
         - skip_ansible_lint
 
+    - role: geerlingguy.security
+      tags:
+        - security
+        - skip_ansible_lint
+
   tasks:
   - import_tasks: tasks/general.yml
     tags: general
