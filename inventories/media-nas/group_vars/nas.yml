@@ -30,6 +30,10 @@ glances_enabled: true
 # Stats (Grafana, Influx usw)
 stats_enabled: true
 
+# Krusader
+krusader_enabled: true
+krusader_browse_directory: "/mnt/Volume3"
+
 ##
 # Security (geerlingguy.security)
 ##
