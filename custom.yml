@@ -11,5 +11,8 @@
     - import_tasks: custom-tasks/avahi.yml
       tags: avahi
 
-    - import_tasks: custom-tasks/traefik.yml
-      tags: traefik
+      # - import_tasks: custom-tasks/traefik.yml
+      # tags: traefik
+
+    - import_tasks: custom-tasks/bareos-client.yml
+      tags: bareos-client

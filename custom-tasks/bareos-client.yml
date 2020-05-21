@@ -1,0 +1,24 @@
+---
+- name: Bareos repository key
+  apt_key:
+    url: 'http://download.bareos.org/bareos/release/18.2/x{{ ansible_lsb.id }}_{{ ansible_lsb.release }}/Release.key'
+    id: 118283D9A7862CEE
+    #id: E5D882B28657AE28
+    state: present
+  become: yes
+
+- name: Bareos repository
+  apt_repository:
+    repo: 'deb http://download.bareos.org/bareos/release/18.2/x{{ ansible_lsb.id }}_{{ ansible_lsb.release }} /'
+    filename: 'bareos'
+    state: present
+  become: yes
+
+- name: Install package
+  apt:
+    name: "bareos-filedaemon"
+    state: present
+  register: result
+  until: result is succeeded
+  become: yes
+# now go and configure your server / client (filesets, jobs, clients etc.)

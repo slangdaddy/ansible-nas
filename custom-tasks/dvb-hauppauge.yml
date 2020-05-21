@@ -1,25 +1,22 @@
 ---
-# Additional tasks to apply to my nas, which (ATM) should not be committed upstream
-- hosts: all
-  tasks:
-    - name: Hauppauge PPA
-      apt_repository:
-        repo: 'ppa:b-rad/kernel+mediatree+hauppauge'
-    
-    # TODO: check if running HWE and determine linux-* to use
-    - name: Packages
-      apt:
-        name: ['linux-mediatree', 'linux-firmware-hauppauge']
-        state: present
-      register: hauppauge_packages
-    
-    - name: reboot if packages are installed
-      reboot:
-      when: hauppauge_packages.changed
+- name: Hauppauge PPA
+  apt_repository:
+    repo: 'ppa:b-rad/kernel+mediatree+hauppauge'
 
-    - name: Install avahi
-      apt:
-        name: "avahi-daemon"
-        state: present
-      register: result
-      until: result is succeeded
+# TODO: check if running HWE and determine linux-* to use
+- name: Packages
+  apt:
+    name: ['linux-mediatree', 'linux-firmware-hauppauge']
+    state: present
+  register: hauppauge_packages
+
+- name: reboot if packages are installed
+  reboot:
+  when: hauppauge_packages.changed
+
+- name: Install avahi
+  apt:
+    name: "avahi-daemon"
+    state: present
+  register: result
+  until: result is succeeded
