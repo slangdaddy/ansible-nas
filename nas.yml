@@ -260,3 +260,7 @@
   - import_tasks: tasks/tvheadend.yml
     when: (tvheadend_enabled | default(False))
     tags: tvheadend
+
+  - import_tasks: tasks/statping.yml
+    when: (statping_enabled | default(False))
+    tags: statping
