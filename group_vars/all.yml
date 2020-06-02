@@ -62,6 +62,7 @@ cloudflare_ddns_enabled: false
 cloudcmd_enabled: false
 virtual_desktop_enabled: false
 krusader_enabled: false
+statping_enabled: false
 
 # Backup & Restore
 duplicati_enabled: false
@@ -902,3 +903,10 @@ vd_users:
     password: "topsecret"
     sudo: "Y"
 vd_rdp_port: 3389
+
+###
+### Statping
+###
+statping_available_externally: "false"
+statping_data_directory: "{{ docker_home }}/statping/data"
+statping_port_http: "8082"
