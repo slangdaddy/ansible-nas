@@ -1,0 +1,37 @@
+// {{ ansible_managed }}
+// HomeMatic Binding + Things
+Bridge homematic:bridge:ccu "CCU Homegear Bridge"
+  [
+    gatewayAddress="homegear"
+  ]
+  {
+    Thing GATEWAY-EXTRAS-CCU      GWE00000000 "Gateway extras"
+
+    Thing HG-HM-CC-RT-DN          MEQ0182438  "Heating GF_Bathroom radiator01" @ "Homegear"
+
+    Thing HG-HM-CC-RT-DN          MEQ0182451  "Heating GF_Bedroom radiator01" @ "Homegear"
+    Thing HG-HM-TC-IT-WM-W-EU     MEQ0107550  "Heating GF_Bedroom thermostat01" @ "Homegear"
+    Thing HG-HM-Sec-SCo           MEQ0724017  "Window  GF_Bedroom window01" @ "Homegear"
+
+    Thing HG-HM-CC-RT-DN          NEQ1518899  "Heating GF_KidsRoomWest radiator01" @ "Homegear"
+    Thing HG-HM-TC-IT-WM-W-EU     MEQ1330567  "Heating GF_KidsRoomWest thermostat01" @ "Homegear"
+    Thing HG-HM-Sec-SCo           NEQ1823796  "Window GF_KidsRoomWest window01" @ "Homegear"
+
+    Thing HG-HM-CC-RT-DN          OEQ0667596  "Heating C_Office radiator01" @ "Homegear"
+    Thing HG-HM-TC-IT-WM-W-EU     OEQ0989211  "Heating C_Office thermostat01" @ "Homegear"
+    Thing HG-HM-Sec-SCo           OEQ0804241  "Window  C_Office window01" @ "Homegear"
+
+    Thing HG-HM-CC-RT-DN          MEQ0803930  "Heating GF_Kitchen radiator01"        @ "Homegear"
+    Thing HG-HM-TC-IT-WM-W-EU     MEQ0863751  "Heating GF_Kitchen thermostat01"     @ "Homegear"
+    Thing HG-HM-Sec-SCo           MEQ1405744  "Window GF_Kitchen window01" @ "Homegear"
+
+    Thing HG-HM-CC-RT-DN          NEQ1226748  "Heating GF_KidsRoomEast radiator01"        @ "Homegear"
+    Thing HG-HM-CC-RT-DN          MEQ0182809  "Heating GF_KidsRoomEast radiator02"        @ "Homegear"
+    Thing HG-HM-TC-IT-WM-W-EU     MEQ0107617  "Heating GF_KidsRoomEast thermostat01"     @ "Homegear"
+    Thing HG-HM-Sec-SCo           MEQ0724019  "Window GF_KidsRoomEast window01" @ "Homegear"
+
+    Thing HG-HM-CC-RT-DN          MEQ0182195  "Heating GF_LivingDining radiator01"        @ "Homegear"
+    Thing HG-HM-CC-RT-DN          MEQ0182816  "Heating GF_LivingDining radiator02"        @ "Homegear"
+    Thing HG-HM-TC-IT-WM-W-EU     MEQ0107758  "Heating GF_LivingDining thermostat01"     @ "Homegear"
+    Thing HG-HM-Sec-SCo           MEQ0724100  "Window GF_LivingDining window01" @ "Homegear"
+  }

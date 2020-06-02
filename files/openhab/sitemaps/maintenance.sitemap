@@ -1,0 +1,5 @@
+sitemap maintenance label="Maintenance" {
+  Frame label="Maintenance" {
+    Group item=gWindowState
+  }
+}

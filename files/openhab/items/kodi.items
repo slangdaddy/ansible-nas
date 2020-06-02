@@ -1,0 +1,38 @@
+// This file is generated. DO NOT MODIFY and expect changes to persist!
+
+Group gKodi_GF_LivingDining_tv01 (gGF_LivingDining)
+Player                 Kodi_GF_LivingDining_tv01_Control         "Control"         <none>               (gKodi_GF_LivingDining_tv01)          {channel="kodi:kodi:tv-wohnzimmer:control"}
+Switch                 Kodi_GF_LivingDining_tv01_Mute            "Mute"            <soundvolume_mute>   (gKodi_GF_LivingDining_tv01)          {channel="kodi:kodi:tv-wohnzimmer:mute"}
+Dimmer                 Kodi_GF_LivingDining_tv01_Volume          "Volume           [%d]"                <soundvolume>   (gKodi_GF_LivingDining_tv01)            {channel="kodi:kodi:tv-wohnzimmer:volume"}
+String                 Kodi_GF_LivingDining_tv01_Title           "Title            [%s]"                <none>          (gKodi_GF_LivingDining_tv01)            {channel="kodi:kodi:tv-wohnzimmer:title"}
+Switch                 Kodi_GF_LivingDining_tv01_Stop            "Stop"            <none>               (gKodi_GF_LivingDining_tv01)          {channel="kodi:kodi:tv-wohnzimmer:stop"}
+String                 Kodi_GF_LivingDining_tv01_SystemCommand   "SystemCommand"   <none>               (gKodi_GF_LivingDining_tv01)          {channel="kodi:kodi:tv-wohnzimmer:systemcommand"}
+String                 Kodi_GF_LivingDining_tv01_MediaType       "MediaType"       <none>               (gKodi_GF_LivingDining_tv01)          {channel="kodi:kodi:tv-wohnzimmer:mediatype"}
+Number:Dimensionless   Kodi_GF_LivingDining_tv01_PlayingTime     "PlayingTime      [%d                  %%]"            <none>         (gKodi_GF_LivingDining_tv01)            {channel="kodi:kodi:tv-wohnzimmer:currenttimepercentage"}
+Group gKodi_GF_Bedroom_tv01 (gGF_Bedroom)
+Player                 Kodi_GF_Bedroom_tv01_Control         "Control"         <none>               (gKodi_GF_Bedroom_tv01)          {channel="kodi:kodi:tv-schlafzimmer:control"}
+Switch                 Kodi_GF_Bedroom_tv01_Mute            "Mute"            <soundvolume_mute>   (gKodi_GF_Bedroom_tv01)          {channel="kodi:kodi:tv-schlafzimmer:mute"}
+Dimmer                 Kodi_GF_Bedroom_tv01_Volume          "Volume           [%d]"                <soundvolume>   (gKodi_GF_Bedroom_tv01)            {channel="kodi:kodi:tv-schlafzimmer:volume"}
+String                 Kodi_GF_Bedroom_tv01_Title           "Title            [%s]"                <none>          (gKodi_GF_Bedroom_tv01)            {channel="kodi:kodi:tv-schlafzimmer:title"}
+Switch                 Kodi_GF_Bedroom_tv01_Stop            "Stop"            <none>               (gKodi_GF_Bedroom_tv01)          {channel="kodi:kodi:tv-schlafzimmer:stop"}
+String                 Kodi_GF_Bedroom_tv01_SystemCommand   "SystemCommand"   <none>               (gKodi_GF_Bedroom_tv01)          {channel="kodi:kodi:tv-schlafzimmer:systemcommand"}
+String                 Kodi_GF_Bedroom_tv01_MediaType       "MediaType"       <none>               (gKodi_GF_Bedroom_tv01)          {channel="kodi:kodi:tv-schlafzimmer:mediatype"}
+Number:Dimensionless   Kodi_GF_Bedroom_tv01_PlayingTime     "PlayingTime      [%d                  %%]"            <none>         (gKodi_GF_Bedroom_tv01)            {channel="kodi:kodi:tv-schlafzimmer:currenttimepercentage"}
+Group gKodi_GF_KidsRoomWest_pc01 (gGF_KidsRoomWest)
+Player                 Kodi_GF_KidsRoomWest_pc01_Control         "Control"         <none>               (gKodi_GF_KidsRoomWest_pc01)          {channel="kodi:kodi:pc-abby:control"}
+Switch                 Kodi_GF_KidsRoomWest_pc01_Mute            "Mute"            <soundvolume_mute>   (gKodi_GF_KidsRoomWest_pc01)          {channel="kodi:kodi:pc-abby:mute"}
+Dimmer                 Kodi_GF_KidsRoomWest_pc01_Volume          "Volume           [%d]"                <soundvolume>   (gKodi_GF_KidsRoomWest_pc01)            {channel="kodi:kodi:pc-abby:volume"}
+String                 Kodi_GF_KidsRoomWest_pc01_Title           "Title            [%s]"                <none>          (gKodi_GF_KidsRoomWest_pc01)            {channel="kodi:kodi:pc-abby:title"}
+Switch                 Kodi_GF_KidsRoomWest_pc01_Stop            "Stop"            <none>               (gKodi_GF_KidsRoomWest_pc01)          {channel="kodi:kodi:pc-abby:stop"}
+String                 Kodi_GF_KidsRoomWest_pc01_SystemCommand   "SystemCommand"   <none>               (gKodi_GF_KidsRoomWest_pc01)          {channel="kodi:kodi:pc-abby:systemcommand"}
+String                 Kodi_GF_KidsRoomWest_pc01_MediaType       "MediaType"       <none>               (gKodi_GF_KidsRoomWest_pc01)          {channel="kodi:kodi:pc-abby:mediatype"}
+Number:Dimensionless   Kodi_GF_KidsRoomWest_pc01_PlayingTime     "PlayingTime      [%d                  %%]"            <none>         (gKodi_GF_KidsRoomWest_pc01)            {channel="kodi:kodi:pc-abby:currenttimepercentage"}
+Group gKodi_GF_KidsRoomEast_pc01 (gGF_KidsRoomEast)
+Player                 Kodi_GF_KidsRoomEast_pc01_Control         "Control"         <none>               (gKodi_GF_KidsRoomEast_pc01)          {channel="kodi:kodi:pc-lia:control"}
+Switch                 Kodi_GF_KidsRoomEast_pc01_Mute            "Mute"            <soundvolume_mute>   (gKodi_GF_KidsRoomEast_pc01)          {channel="kodi:kodi:pc-lia:mute"}
+Dimmer                 Kodi_GF_KidsRoomEast_pc01_Volume          "Volume           [%d]"                <soundvolume>   (gKodi_GF_KidsRoomEast_pc01)            {channel="kodi:kodi:pc-lia:volume"}
+String                 Kodi_GF_KidsRoomEast_pc01_Title           "Title            [%s]"                <none>          (gKodi_GF_KidsRoomEast_pc01)            {channel="kodi:kodi:pc-lia:title"}
+Switch                 Kodi_GF_KidsRoomEast_pc01_Stop            "Stop"            <none>               (gKodi_GF_KidsRoomEast_pc01)          {channel="kodi:kodi:pc-lia:stop"}
+String                 Kodi_GF_KidsRoomEast_pc01_SystemCommand   "SystemCommand"   <none>               (gKodi_GF_KidsRoomEast_pc01)          {channel="kodi:kodi:pc-lia:systemcommand"}
+String                 Kodi_GF_KidsRoomEast_pc01_MediaType       "MediaType"       <none>               (gKodi_GF_KidsRoomEast_pc01)          {channel="kodi:kodi:pc-lia:mediatype"}
+Number:Dimensionless   Kodi_GF_KidsRoomEast_pc01_PlayingTime     "PlayingTime      [%d                  %%]"            <none>         (gKodi_GF_KidsRoomEast_pc01)            {channel="kodi:kodi:pc-lia:currenttimepercentage"}

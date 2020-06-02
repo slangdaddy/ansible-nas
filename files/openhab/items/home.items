@@ -1,0 +1,53 @@
+Group     gHome                          "Zuhause"                  <house>
+
+Group     gC                             "Keller"                   <cellar>             (gHome)
+Group     gGF                            "Erdgeschoss"              <groundfloor>        (gHome)
+Group     gOU                            "Draußen"                  <garden>             (gHome)
+
+Group     gC_Office                      "Büro"                     <office>             (gHome, gC)
+Group     gC_Stairwell                   "Treppenhaus"              <qualityofservice>   (gHome, gC)
+Group     gGF_Bathroom                   "Badezimmer"               <bath>               (gHome, gGF)
+Group     gGF_Bedroom                    "Schlafzimmer"             <bedroom>            (gHome, gGF)
+Group     gGF_Wardrobe                   "Garderobe"                <wardrobe>           (gHome, gGF)
+Group     gGF_Hallway                    "Flur"                     <corridor>           (gHome, gGF)
+Group     gGF_Kitchen                    "Küche"                    <kitchen>            (gHome, gGF)
+Group     gGF_LivingDining               "Wohn-Esszimmer"           <sofa>               (gHome, gGF)
+Group     gGF_Toilet                     "Toilette"                 <toilet>             (gHome, gGF)
+Group     gOU_FrontYard                  "Vorgarten"                <lawnmower>          (gHome, gOU)
+Group     gOU_Garden                     "Draußen"                  <garden>             (gHome, gOU)
+Group     gGF_KidsRoomWest               "Kinderzimmer West (Abby)" <girl_2>             (gHome, gGF)
+Group     gGF_KidsRoomEast               "Kinderzimmer Ost (Lia)"   <girl_3>             (gHome, gGF)
+
+// Contact   C_Office_Window               "Fenster"               <window>             (C_Office, gWindow)                  {channel=""}
+// Number    C_Office_Heating              "Heizung"               <heating>            (C_Office, gHeating)                 {channel=""}
+// Number    C_Office_Temperature          "Temperatur"            <temperature>        (C_Office, gTemperature)             {channel=""}
+// Number    C_Office_Humidity             "Luftfeuchtigkeit"      <humidity>           (C_Office, gHumidity)                {channel=""}
+// Number    GF_Bathroom_Heating           "Heizung"               <heating>            (GF_Bathroom, gHeating)              {channel=""}
+// Number    GF_Bathroom_Temperature       "Temperatur"            <temperature>        (GF_Bathroom, gTemperature)          {channel=""}
+// Number    GF_Bedroom_Humidity           "Luftfeuchtigkeit"      <humidity>           (GF_Bedroom, gHumidity)              {channel=""}
+// Number    GF_Bedroom_Heating            "Heizung"               <heating>            (GF_Bedroom, gHeating)               {channel=""}
+// Number    GF_Bedroom_Temperature        "Temperatur"            <temperature>        (GF_Bedroom, gTemperature)           {channel=""}
+// Contact   GF_Bedroom_Window             "Fenster"               <window>             (GF_Bedroom, gWindow)                {channel=""}
+// Contact   GF_KidsRoom_Window            "Fenster"               <window>             (GF_KidsRoom, gWindow)               {channel=""}
+// Number    GF_KidsRoom_Heating           "Heizung"               <heating>            (GF_KidsRoom, gHeating)              {channel=""}
+// Number    GF_KidsRoom_Temperature       "Temperatur"            <temperature>        (GF_KidsRoom, gTemperature)          {channel=""}
+// Number    GF_KidsRoom_Humidity          "Luftfeuchtigkeit"      <humidity>           (GF_KidsRoom, gHumidity)             {channel=""}
+// Contact   GF_Kitchen_Window             "Fenster"               <window>             (GF_Kitchen, gWindow)                {channel=""}
+// Number    GF_Kitchen_Heating            "Heizung"               <heating>            (GF_Kitchen, gHeating)               {channel=""}
+// Number    GF_Kitchen_Temperature        "Temperatur"            <temperature>        (GF_Kitchen, gTemperature)           {channel=""}
+// Number    GF_Kitchen_Humidity           "Luftfeuchtigkeit"      <humidity>           (GF_Kitchen, gHumidity)              {channel=""}
+// Number    GF_LivingDining_Heating       "Heizung"               <heating>            (GF_LivingDining, gHeating)          {channel=""}
+// Number    GF_LivingDining_Temperature   "Temperatur"            <temperature>        (GF_LivingDining, gTemperature)      {channel=""}
+// Number    GF_LivingDining_Humidity      "Luftfeuchtigkeit"      <humidity>           (GF_LivingDining, gHumidity)         {channel=""}
+// Contact   GF_LivingDining_Window        "Fenster"               <window>             (GF_LivingDining, gWindow)           {channel=""}
+// Contact   GF_KidsRoom2_Window           "Fenster"               <window>             (GF_KidsRoom2, gWindow)              {channel=""}
+// Number    GF_KidsRoom2_Heating          "Heizung"               <heating>            (GF_KidsRoom2, gHeating)             {channel=""}
+// Number    GF_KidsRoom2_Temperature      "Temperatur"            <temperature>        (GF_KidsRoom2, gTemperature)         {channel=""}
+// Number    GF_KidsRoom2_Humidity         "Luftfeuchtigkeit"      <humidity>           (GF_KidsRoom2, gHumidity)            {channel=""}
+// Number    GF_Toilet_Heating             "Heizung"               <heating>            (GF_Toilet, gHeating)                {channel=""}
+// Number    GF_Toilet_Temperature         "Temperatur"            <temperature>        (GF_Toilet, gTemperature)            {channel=""}
+
+Group:Contact:OR(OPEN, CLOSED)   gWindow        "Fenster"            <window>        (Home)
+Group:Number:AVG                 gHeating       "Heizung"            <heating>       (Home)
+Group:Number:AVG                 gTemperature   "Temperatur"         <temperature>   (Home)
+Group:Number:AVG                 gHumidity      "Luftfeuchtigkeit"   <humidity>      (Home)

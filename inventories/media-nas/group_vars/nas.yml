@@ -34,6 +34,9 @@ stats_enabled: true
 krusader_enabled: true
 krusader_browse_directory: "/mnt/Volume3"
 
+# OpenHab
+openhab_enabled: true
+
 ##
 # Security (geerlingguy.security)
 ##

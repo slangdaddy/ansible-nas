@@ -1,0 +1,41 @@
+// Heating groups
+Group:Number:AVG gHeating_GF_LivingDining_Humidity            "Humidity [%d %%]"            <humidity> (gHumidity)
+Group:Number:AVG gHeating_GF_LivingDining_Temperature         "Temperature [%.1f °C]"       <temperature> (gTemperature)
+Group:Number     gHeating_GF_LivingDining_TargetTemperature   "TargetTemperature [%.1f °C]" <heating> (gHeating)
+
+Group:Number:AVG gHeating_GF_Bathroom_Humidity            "Humidity [%d %%]"            <humidity> (gHumidity)
+Group:Number:AVG gHeating_GF_Bathroom_Temperature         "Temperature [%.1f °C]"       <temperature> (gTemperature)
+Group:Number     gHeating_GF_Bathroom_TargetTemperature   "TargetTemperature [%.1f °C]" <heating> (gHeating)
+
+Group:Number:AVG gHeating_GF_Toilet_Humidity            "Humidity [%d %%]"            <humidity> (gHumidity)
+Group:Number:AVG gHeating_GF_Toilet_Temperature         "Temperature [%.1f °C]"       <temperature> (gTemperature)
+Group:Number     gHeating_GF_Toilet_TargetTemperature   "TargetTemperature [%.1f °C]" <heating> (gHeating)
+
+Group:Number:AVG gHeating_GF_Bedroom_Humidity            "Humidity [%d %%]"            <humidity> (gHumidity)
+Group:Number:AVG gHeating_GF_Bedroom_Temperature         "Temperature [%.1f °C]"       <temperature> (gTemperature)
+Group:Number     gHeating_GF_Bedroom_TargetTemperature   "TargetTemperature [%.1f °C]" <heating> (gHeating)
+
+Group:Number:AVG gHeating_GF_KidsRoomEast_Humidity            "Humidity [%d %%]"            <humidity> (gHumidity)
+Group:Number:AVG gHeating_GF_KidsRoomEast_Temperature         "Temperature [%.1f °C]"       <temperature> (gTemperature)
+Group:Number     gHeating_GF_KidsRoomEast_TargetTemperature   "TargetTemperature [%.1f °C]" <heating> (gHeating)
+
+Group:Number:AVG gHeating_GF_KidsRoomWest_Humidity            "Humidity [%d %%]"            <humidity> (gHumidity)
+Group:Number:AVG gHeating_GF_KidsRoomWest_Temperature         "Temperature [%.1f °C]"       <temperature> (gTemperature)
+Group:Number     gHeating_GF_KidsRoomWest_TargetTemperature   "TargetTemperature [%.1f °C]" <heating> (gHeating)
+
+Group:Number:AVG gHeating_GF_Kitchen_Humidity            "Humidity [%d %%]"            <humidity> (gHumidity)
+Group:Number:AVG gHeating_GF_Kitchen_Temperature         "Temperature [%.1f °C]"       <temperature> (gTemperature)
+Group:Number     gHeating_GF_Kitchen_TargetTemperature   "TargetTemperature [%.1f °C]" <heating> (gHeating)
+
+Group:Number:AVG gHeating_C_Office_Humidity            "Humidity [%d %%]"            <humidity> (gHumidity)
+Group:Number:AVG gHeating_C_Office_Temperature         "Temperature [%.1f °C]"       <temperature> (gTemperature)
+Group:Number     gHeating_C_Office_TargetTemperature   "TargetTemperature [%.1f °C]" <heating> (gHeating)
+
+// Window groups
+Group:Contact:OR(OPEN, CLOSED) gWindow_GF_LivingDining_WindowState "LivingDining WindowState" (gWindow)
+Group:Contact:OR(OPEN, CLOSED) gWindow_GF_Bathroom_WindowState     "Bathroom WindowState"     (gWindow)
+Group:Contact:OR(OPEN, CLOSED) gWindow_GF_Bedroom_WindowState      "Bedroom WindowState"      (gWindow)
+Group:Contact:OR(OPEN, CLOSED) gWindow_GF_KidsRoomEast_WindowState "KidsRoomEast WindowState" (gWindow)
+Group:Contact:OR(OPEN, CLOSED) gWindow_GF_KidsRoomWest_WindowState "KidsRoomWest WindowState" (gWindow)
+Group:Contact:OR(OPEN, CLOSED) gWindow_GF_Kitchen_WindowState      "Kitchen WindowState"      (gWindow)
+Group:Contact:OR(OPEN, CLOSED) gWindow_C_Office_WindowState        "Office WindowState"       (gWindow)

@@ -1,0 +1,4 @@
+Thing kodi:kodi:tv-wohnzimmer "Kodi GF_LivingDining tv01"   @ "Netzwerk"    [ipAddress="tv-wohnzimmer"]
+Thing kodi:kodi:tv-schlafzimmer "Kodi GF_Bedroom tv01"   @ "Netzwerk"    [ipAddress="tv-schlafzimmer"]
+Thing kodi:kodi:pc-abby  "Kodi GF_KidsRoomWest pc01" @ "Netzwerk" [ipAddress="abby-le"]
+Thing kodi:kodi:pc-lia   "Kodi GF_KidsRoomEast pc01"  @ "Netzwerk" [ipAddress="lia-le"]

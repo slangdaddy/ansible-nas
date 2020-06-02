@@ -1,0 +1,74 @@
+sitemap home label="home" {
+    Frame label="Keller" icon="cellar" {
+        Group item=gC_Office
+        Group item=gC_Stairwell
+    }
+
+    Frame label="Erdgeschoss" icon="groundfloor" {
+        Group item=gGF_Bathroom
+        Group item=gGF_Bedroom
+        Group item=gGF_Wardrobe
+        Group item=gGF_Hallway
+        Group item=gGF_KidsRoomEast
+        Group item=gGF_Kitchen
+        Group item=gGF_LivingDining
+        Group item=gGF_KidsRoomWest
+        Group item=gGF_Toilet
+    }
+
+    Frame label="Draußen" icon="garden" {
+        Group item=gOU_FrontYard
+        Group item=gOU_Garden
+    }
+
+    Frame {
+        Text label="Fenster" icon="window" {
+            Default item=gWindow_C_Office_WindowState label="Büro"
+            Default item=gWindow_GF_Bedroom_WindowState label="Schlafzimmer"
+            Default item=gWindow_GF_KidsRoomWest_WindowState label="Kinderzimmer West (Abby)"
+            Default item=gWindow_GF_Kitchen_WindowState label="Küche"
+            Default item=gWindow_GF_LivingDining_WindowState label="Wohn-Esszimmer"
+            Default item=gWindow_GF_KidsRoomEast_WindowState label="Kinderzimmer Ost (Lia)"
+        }
+
+        Text label="Heizung" icon="heating" {
+            Default item=gHeating_C_Office_TargetTemperature label="Büro"
+            Default item=gHeating_GF_Bathroom_TargetTemperature label="Badezimmer"
+            Default item=gHeating_GF_Bedroom_TargetTemperature label="Schlafzimmer"
+            Default item=gHeating_GF_KidsRoomWest_TargetTemperature label="Kinderzimmer West (Abby)"
+            Default item=gHeating_GF_Kitchen_TargetTemperature label="Küche"
+            Default item=gHeating_GF_LivingDining_TargetTemperature label="Wohn-Esszimmer"
+            Default item=gHeating_GF_KidsRoomEast_TargetTemperature label="Kinderzimmer Ost (Lia)"
+            Default item=gHeating_GF_Toilet_TargetTemperature label="Toilette"
+        }
+
+        Text label="Temperatur" icon="temperature" {
+            Default item=gHeating_C_Office_Temperature label="Büro"
+            Default item=gHeating_GF_Bathroom_Temperature label="Badezimmer"
+            Default item=gHeating_GF_Bedroom_Temperature label="Schlafzimmer"
+            Default item=gHeating_GF_KidsRoomWest_Temperature label="Kinderzimmer West (Abby)"
+            Default item=gHeating_GF_Kitchen_Temperature label="Küche"
+            Default item=gHeating_GF_LivingDining_Temperature label="Wohn-Esszimmer"
+            Default item=gHeating_GF_KidsRoomEast_Temperature label="Kinderzimmer Ost (Lia)"
+            Default item=gHeating_GF_Toilet_Temperature label="Toilette"
+        }
+
+        Text label="Luftfeuchtigkeit" icon="humidity" {
+            Default item=gHeating_C_Office_Humidity label="Büro"
+            Default item=gHeating_GF_Bedroom_Humidity label="Schlafzimmer"
+            Default item=gHeating_GF_KidsRoomWest_Humidity label="Kinderzimmer West (Abby)"
+            Default item=gHeating_GF_Kitchen_Humidity label="Küche"
+            Default item=gHeating_GF_LivingDining_Humidity label="Wohn-Esszimmer"
+            Default item=gHeating_GF_KidsRoomEast_Humidity label="Kinderzimmer Ost (Lia)"
+        }
+
+        Text label="Medien" icon="mediacontrol" {
+            Default item=gMedia_C_Office_Kodi label="Büro"
+            Default item=gMedia_GF_Bedroom_Kodi label="Schlafzimmer"
+            Default item=gMedia_GF_KidsRoomWest_Kodi label="Kinderzimmer West (Abby)"
+            Default item=gMedia_GF_Kitchen_Kodi label="Küche"
+            Default item=gMedia_GF_LivingDining_Kodi label="Wohn-Esszimmer"
+            Default item=gMedia_GF_KidsRoomEast_Kodi label="Kinderzimmer Ost (Lia)"
+        }
+    }
+}
