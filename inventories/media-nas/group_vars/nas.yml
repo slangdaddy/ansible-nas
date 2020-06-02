@@ -37,6 +37,9 @@ krusader_browse_directory: "/mnt/Volume3"
 # OpenHab
 openhab_enabled: true
 
+# Statping
+statping_enabled: true
+
 ##
 # Security (geerlingguy.security)
 ##

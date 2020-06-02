@@ -1,0 +1,23 @@
+- name: Create Statping Directories
+  file:
+    path: "{{ item }}"
+    state: directory
+  with_items:
+    - "{{ statping_data_directory }}"
+
+- name: Statping Docker Container
+  docker_container:
+    name: statping
+    image: statping/statping
+    pull: true
+    volumes:
+      - "{{ statping_data_directory }}:/app:rw"
+    ports:
+      - "{{ statping_port_http }}:8080"
+    restart_policy: unless-stopped
+    memory: 1g
+    labels:
+      traefik.backend: "statping"
+      traefik.frontend.rule: "Host:statping.{{ ansible_nas_domain }}"
+      traefik.enable: "{{ statping_available_externally }}"
+      traefik.port: "8080"

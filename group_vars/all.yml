@@ -63,6 +63,7 @@ cloudflare_ddns_enabled: false
 cloudcmd_enabled: false
 virtual_desktop_enabled: false
 krusader_enabled: false
+statping_enabled: false
 
 # Backup & Restore
 duplicati_enabled: false
@@ -931,3 +932,9 @@ tvheadend_port_htsp: "9982"
 tvheadend_hw_accel: false
 # If true, pass /dev/dvb for for dvb tuner cards to docker
 tvheadend_hw_dvb: false
+
+### Statping
+###
+statping_available_externally: "false"
+statping_data_directory: "{{ docker_home }}/statping/data"
+statping_port_http: "8082"

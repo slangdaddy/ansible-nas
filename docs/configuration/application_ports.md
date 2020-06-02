@@ -41,6 +41,7 @@ By default, applications can be found on the ports listed below.
 | MyMediaForAlexa | 52051  |              |
 | Netdata         | 19999  |              |
 | Nextcloud       | 8080   |              |
+| Statping        | 8082   | HTTP         |
 | NZBGet          | 6789   |              |
 | Ombi            | 3579   |              |
 | openHAB         | 7777   | HTTP         |
