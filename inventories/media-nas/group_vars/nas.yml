@@ -12,6 +12,8 @@
 ansible_nas_hostname: media-nas
 ansible_nas_timezone: Europe/Berlin
 ansible_nas_user: benjamin
+ansible_nas_email: benjamin@benjaminvoigt.net
+ansible_nas_domain: benjaminvoigt.net
 
 # TVHeadend
 tvheadend_enabled: true
@@ -39,6 +41,10 @@ openhab_enabled: true
 
 # Statping
 statping_enabled: true
+
+# Watchtower
+watchtower_enabled: true
+watchtower_command: "--schedule '{{ watchtower_cron_schedule }}' --notifications 'email' --notification-email-from 'watchtower@{{ ansible_nas_hostname }}.{{ ansible_nas_domain }}' --notification-email-to '{{ ansible_nas_email }}' --notification-email-server 'mail.benjaminvoigt.net' --notification-email-server-port '25' --notification-email-server-tls-skip-verify"
 
 ##
 # Security (geerlingguy.security)
