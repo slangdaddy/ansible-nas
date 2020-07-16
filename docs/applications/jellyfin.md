@@ -24,6 +24,8 @@ lines in `all.yml`:
 ```
         jellyfin_movies_permissions: "rw"
         jellyfin_tv_permissions: "rw"
+        jellyfin_books_permissions: "rw"
+        jellyfin_audiobooks_permissions: "rw"
         jellyfin_music_permissions: "rw"
 ```
 
