@@ -46,6 +46,9 @@ watchtower_command: "--schedule '{{ watchtower_cron_schedule }}' --notifications
 # YoutubeDL
 youtubedlmaterial_enabled: true
 
+# Calibre(-Web)
+calibre_enabled: true
+
 ##
 # Security (geerlingguy.security)
 ##
